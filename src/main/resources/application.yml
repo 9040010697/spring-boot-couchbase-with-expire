@@ -1,0 +1,17 @@
+app:
+  couchbase:
+    bootstrap-hosts: localhost
+    username: realspeed
+    password: realspeed
+    bucket:
+      name: session-bkt
+      expire: 30
+
+
+
+#CREATE PRIMARY INDEX ON `session-bkt` USING GSI;
+# create a user inside security tab
+
+#Creating custom index on user
+# CREATE INDEX idx_session_id ON `session-bkt`(sessionId)
+
